@@ -9,12 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "bg-gray": "rgb(255,255,255)",
+        "gradient": "linear-gradient(333deg, rgba(255,255,255,1) 23%, rgba(82,82,82,1) 81%);",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 };
 export default config;
